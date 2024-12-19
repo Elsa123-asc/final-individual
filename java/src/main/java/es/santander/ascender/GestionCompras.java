@@ -31,29 +31,32 @@ public class GestionCompras {
                         op = teclado.nextInt();
 
                     switch (op) {
-                        case 1: mostrarProductos(codProducto,nombre,precio,cantProductoTotal); 
-                        //llamar a muestra productos
-                            
+                        case 1:
+                        mostrarProductos(codProducto,nombre,precio,cantProductoTotal); 
+                        //llamar a muestra producto
                             break;
-                        case 2: mostrarCarrito (codProducto,nombre,precio,cantProductolinea,
-                        codProductoCarrito,cantProductoCarrito, subtProductoCarrito, cantProductolinea);
+
+                        case 2: 
+                        int sumaTotal = mostrarCarrito(codProducto, nombre, precio, 
+                        codProductoCarrito, cantProductoCarrito, subtProductoCarrito, cantProductolinea);
+                        System.out.println("El total es: " + sumaTotal);
                         //llamar a muestra carrito
                             break;
 
-                        case 3: buscarProd if (cantProductolinea < 9) {
-                                cantProductolinea =agregarCarrito(codProducto, nombre, precio, codProductoCarrito, cantProductoCarrito, 
-                                subtProductoCarrito, cantProductolinea, teclado);
+                        case 3: 
+                        if (cantProductolinea < 9) {
+                            cantProductolinea = agregarCarrito(codProducto, nombre, precio, codProductoCarrito, cantProductoCarrito, 
+                            subtProductoCarrito, cantProductolinea, teclado);
                         } 
 
                             else   {
                                 System.out.println("El carrito esta lleno");
-                                {
-                            break;
                             }
-                        }
+                            break;     
+                        
                     }       
 
-    }                 
+                 }                 
                         while (op!=4);
                         int sumaTotal  = mostrarCarrito(codProducto, nombre, precio, 
                         codProductoCarrito, cantProductoCarrito,subtProductoCarrito,cantProductolinea);
@@ -80,44 +83,42 @@ public class GestionCompras {
                             System.out.println("Carrito de compras");
                             System.out.println("================");
 
-                            for (int i = 0; i <= cantProductolinea.length;i++) {
-                                    int h = buscarProd(cantProducto_linea, costProducto); // Llamar la busqueda de productos
+                            for (int i = 0; i < cantProductolinea.length;i++) {
+                                    int h = buscarProd(cantProducto_linea[i], costProducto); // Llamar la busqueda de productos
                                     if (h != -1) { 
-                                    System.out.println(costProducto[h] + " - " + nombreProducto[h] + " - "+ precioProducto[h] + " - " +
+                                    System.out.println(costProducto[h] + " - " + nombreProducto[h] + " - " +
                                         cantProductolinea[i] + " - "+ subt[i]);
                                         suma = suma + subt[i];
-                                        } else {
+                                        } 
+                                        else {
                                         System.out.println("Producto no encontrado en la posición " + i);
-                                        return suma; 
-                            }           
+                                             }
+                                        } 
+                                        return suma;     
+                                }           
                                     
-                                public static int buscarProd(int[] codProducto, int[] productos, String[] nombre, int[] precioProducto) {
+                                public static int buscarProd(int[] codProducto, int[] costProducto) {
                                     int posicion = -1;
-                                        for (int i = 0; i<codProducto.length;i++) {
-                                        if (codProducto[i] == productos[i]) {
+                                        for (int i = 0; i<costProducto.length;i++) {
+                                        if (codProducto[i] == codProducto[i]) {
                                             posicion = i;
-                                            System.out.println(codProducto[i] + " - " + nombre[i] + " - "+ precioProducto[i]); 
                                             break;
                                         }     
                             
-                                    }   
-                                
-                                  if (posicion == -1)   {   
-                                  System.out.println("Producto no encontrado");
-                                    }  
-                                   return posicion;             
-                               
+                                    }
+                                return posicion;
+                                   
+                            } 
                                                     
                                 public static int agregarCarrito (int[] costProducto, String[] nombreProducto, int[] precioProducto,
-                                    int[] cantProducto_linea, int[] cantProductolinea, int[] subt, int antProductolinea, 
-                                        Scanner teclado) {
-                                        System.out.println("Ingrese el codigo del producto deseado:");
-
+                                    int[] cantProducto_linea, int cantProductolinea, int[] subt, int antProductolinea, 
+                                    Scanner teclado) {
+                                        System.out.println("Ingrese el codigo del producto deseado: ");
                                         int codProducto = teclado.nextInt();
 
-                                    int posicion = buscarProd (codProducto, costProducto);
+                                    int posicion = buscarProd(codProducto, costProducto);
 
-                                        if ( posicion ==-1) {
+                                        if ( posicion == -1) {
                                         System.out.println("Producto no disponible!");
                                         return cantProductolinea;
                                         }
@@ -125,14 +126,15 @@ public class GestionCompras {
 
                                     int cantidad = teclado.nextInt();
 
-                                        cantProducto_linea [cantProductolinea] = codProducto;
-                                        cantProductolinea [cantProductolinea] = cantidad;
-                                        subt [cantProductolinea] = precioProducto(posicion)* cantidad;
-                                        return (cantProductolinea+1);
+                                        cantProducto_linea[cantProductolinea] = codProducto;
+                                        subt[cantProductolinea] = precioProducto[posicion] * cantidad;
+                                        cantProductolinea++;
+                                        return cantProductolinea;
+                                    }
                                                                 
         }
 
-}
+
 
     
 
