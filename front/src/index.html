@@ -1,115 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
-    <title>Mi aplicación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi aplicacion</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">    
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  </head>
-  <body style="background-color:default">
-    <div class="col-md-12 text-center" class="container overflow-hidden">
-        <div class="row gx-6">
-          <div class="col">
-
-    <div style="background-color: brown;" class="p-4  btn-secondary"><img src="logo.png" alt="logo asc" width="100" height="50"><h1>TEQUILA AMERICA</h1></div>
-    </div> 
-    <div class="container">
-      <div> <h1> Tienda</h1></div>
-        <div class="container-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-            <path stroke-linecap="round" stroke-linejoin="round"
-             d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-          </svg>
-        </div>
-      </div>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div style="background-color: brown; width: 100%; display: flex; align-items: center; padding: 20;">
+        <img src="logo.png" alt="logo asc" width="100" height="50">
+        <h1 style="margin-left: 300px; color: azure;">TEQUILA AMERICA</h1>
     </div>
-        </header>
-        <div class="container-items">
-          <div class="item"> 
-            <figure>
-              <img src="Tequila Clase Azul.jpg" alt="producto">
-                  </figure>
-                    <div id="1" class="info-producto"><h2>Clase Azul Tequila</h2>
-                        <p class="price">$490</p>
-                        <p class="cantidad"></p> 
-                        <button>Añadir al carrito</button>
-                        <button>Borrar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                <div class="container-items">
-                <div class="item"> 
-               <figure>
-              <img src="Tequila Casa Dragones.jpg" alt="producto">
-                  </figure>
-                    <div id="2" class="info-producto"><h2>Casa Dragones Tequila</h2>
-                        <p class="price">$330</p> 
-                        <p class="cantidad"></p> 
-                        <button>Añadir al carrito</button>
-                        <button>Borrar</button>
-                     </div>
-                </div>
-             </div>
-          </div>
-          <br>
-        <div class="container-items">
-          <div class="item"> 
-            <figure>
-              <img src="Don Julio.jpg" alt="producto">
-                  </figure>
-                    <div id="3" class="info-producto"><h2>Don Julio Tequila</h2>
-                      <p class="price">$240</p>
-                        <p class="cantidad"></p> 
-                        <button>Añadir al carrito</button>
-                        <button>Borrar</button>
- </div>
-        <br>
-        <div class="container-items">
-          <div class="item"> 
-            <figure>
-              <img src="patron tequila.avif" alt="producto">
-                  </figure>
-                    <div id="4" class="info-producto"><h2>Patron Tequila</h2>
-                        <p class="price">$220</p>
-                        <p class="cantidad"></p> 
-                        <button>Añadir al carrito</button>
-                        <button>Borrar</button>
-          </div>
-        <div class="container-items">
-          <div class="item"> 
-            <figure>
-              <img src="jose cuervo.webp" alt="producto">
-                  </figure>
-                    <div id="4" class="info-producto"><h2>José Cuervo Tequila</h2>
-                        <p class="price">$150</p>
-                        <p class="cantidad"></p> 
-                        <button>Añadir al carrito</button>
-                        <button>Borrar</button>
-        </div>
+    <!-- Icono del carrito -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+      </svg>
+    <!-- Productos -->
+     <table>
+        <tr>
+          <td>
+            <div class="item">
+              <figure>
+                <img src="Tequila CAzul.jpeg" alt="producto">
+              </figure>
+              <div id="1" class="info-producto">
+                <h2>Clase Azul Tequila</h2>
+                <p class="price">490€</p>
+                <p class="cantidad"></p>
+                <button type="button" class="btn btn-secondary" class="add-to-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-danger" class="remove-from-cart">Borrar</button>
+              </div>
+            </div>
+            <br><br><br>
+          </td>
+          <td>
+            <div class="item" style="margin-left: 30;">
+              <figure>
+                <img src="Casa DRagjpg" alt="producto">
+              </figure>
+              <div id="2" class="info-producto">
+                <h2>Casa Dragones Tequila</h2>
+                <p class="price">330€</p>
+                <p class="cantidad"></p>
+                <button type="button" class="btn btn-secondary" class="add-to-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-danger" class="remove-from-cart">Borrar</button>
+              </div>
+            </div>
+            <br><br><br>
+          </td>
+          <td>
+            <div class="item" style="margin-left: 30;">
+              <figure>
+                <img src="Don JUlio.jpeg" alt="producto">
+              </figure>
+              <div id="3" class="info-producto">
+                <h2>Don Julio Tequila</h2>
+                <p class="price">240€</p>
+                <p class="cantidad"></p>
+                <button type="button" class="btn btn-secondary" class="add-to-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-danger" class="remove-from-cart">Borrar</button>
+              </div>
+            </div>
+            <br><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="item">
+              <figure>
+                <img src="patron tequila.avif" alt="producto">
+              </figure>
+              <div id="4" class="info-producto">
+                <h2>Patron Tequila</h2>
+                <p class="price">220€</p>
+                <p class="cantidad"></p>
+                <button type="button" class="btn btn-secondary" class="add-to-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-danger" class="remove-from-cart">Borrar</button>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="item" style="margin-left: 30;">
+              <figure>
+                <img src="Cuervo.jpeg" alt="producto">
+              </figure>
+              <div id="5" class="info-producto">
+                <h2>José Cuervo Tequila</h2>
+                <p class="price">150€</p>
+                <p class="cantidad"></p>
+                <button type="button" class="btn btn-secondary" class="add-to-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-danger" class="remove-from-cart">Borrar</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+     </table>
+     <br><br><br><br><br>
+     <h2>Carrito</h2>
+      <table class="table" style=" border: 1px; color: solid black ;" style="width:100%">
+        <tr>
+          <th style="font-size: medium"scope="col">Tequila</th>
+          <th style="font-size: medium"scope="col">Cantidad</th>
+          <th style="font-size: medium"scope="col">Precio</th> 
+        </tr>
+        <tr>
+          <td>Clase Azul Tequila</td>
+          <td>10</td>
+          <td>490</td>
+        </tr>
+      </table>
+      
 
-          
-                                              
 
-
-           
-
-
-      <br>
-      <footer>
-      <p><small>©2024/Team-Ascentic/Derechos reservados</small></p>
-      </footer>
-      <script src="./javascript/index.js"></script>
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  </body>
+     <br><br><br>
+     <footer style="align-content: center; width: 100%;">
+      <p>
+        <small>©2024/Team-Ascentic/Derechos reservados</small>
+      </p>
+    </footer>
+</body>
 </html>

@@ -2,13 +2,34 @@
   "solicitudes": [
     {
       "id": 1,
-      "nombre": "Fernando",
-      "apellido": "Alguno"
+      "nombre": "Clase Azul Tequila",
+      "precio": "490",
+      "cantidad": "10"
     },
     {
       "id": 2,
-      "nombre": "Nico",
-      "apellido": "Otro"
+      "nombre": "Casa Dragones Tequila",
+      "precio": "330",
+      "cantidad": "10"
+    },
+
+    {
+      "id": 3,
+      "nombre": "Don Julio Tequila",
+      "precio": "240",
+      "cantidad": "10"
+    },
+    {
+      "id": 4,
+      "nombre": "Patron Tequila",
+      "precio": "220",
+      "cantidad": "10"
+    },
+    {
+      "id": 5,
+      "nombre": "Jose Cuervo Tequila",
+      "precio": "150",
+      "cantidad": "10"
     }
   ]
 }
