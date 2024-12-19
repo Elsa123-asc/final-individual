@@ -16,57 +16,94 @@
     <div class="col-md-12 text-center" class="container overflow-hidden">
         <div class="row gx-6">
           <div class="col">
-           
-           <div class="p-4  btn-secondary"><img src="logo.png" alt="logo asc" width="100" height="50"><h1>ADIVINA NÚMERO</h1></div>
-          </div> 
+
+    <div style="background-color: brown;" class="p-4  btn-secondary"><img src="logo.png" alt="logo asc" width="100" height="50"><h1>TEQUILA AMERICA</h1></div>
+    </div> 
     <div class="container">
-        <div class="row my-6">
-
-            <div id="jugador1" class="col-6 text-center">
-            <span><strong>Jugador 1</strong></span>
-                <div class="circle red"></div>
-                <hr>
-                <p><strong>Intentos: <span id="intentosJugador1">0</span> / 10</strong></p>
-                <hr>
-                <p><strong>Puntos: <span id="puntosJugador1">0</span></strong></p>
-               
-            </div>
-    
-            <div id="jugador2" class="col-6 text-center">
-                <span><Strong>Jugador 2</Strong></span>
-                <div class="circle blue"></div>
-                <hr>
-                <p><strong>Intentos: <span id="intentosJugador2">0</span> / 10</strong></p>
-                <hr>
-                <p><strong>Puntos: <span id="puntosJugador2">0</span></strong></p>
-            
-            </div>
+      <div> <h1> Tienda</h1></div>
+        <div class="container-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+             d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+          </svg>
         </div>
-        
-    
-        <div class="row justify-content-center">
-            <div class="col-15 col-md-1game-box">
-                <div class="mb-3">
-                    <label for="partida" class="form-label" id:"partida">Partida:</label>
-                    <input style="text-align: center;" type="number" id="partida" class="form-control" disabled value="1">
-                </div>
-                <div class="mb-6">
-                    <p>Elija un número del 1 al 100</p>
-                    <input style="text-align: center;" placeholder="Inserta un número" type="number" id="numero" class="form-control" min="1" max="100">
-                </div>
-                <br>
-                <div>
-                    <button class="btn btn-primary" onclick="enviar()">Enviar</button>
-                    <button class="btn btn-danger" onclick="abandonar()">Abandonar</button>
-                </div>
-            </div>
       </div>
+    </div>
+        </header>
+        <div class="container-items">
+          <div class="item"> 
+            <figure>
+              <img src="Tequila Clase Azul.jpg" alt="producto">
+                  </figure>
+                    <div id="1" class="info-producto"><h2>Clase Azul Tequila</h2>
+                        <p class="price">$490</p>
+                        <p class="cantidad"></p> 
+                        <button>Añadir al carrito</button>
+                        <button>Borrar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <div class="container-items">
+                <div class="item"> 
+               <figure>
+              <img src="Tequila Casa Dragones.jpg" alt="producto">
+                  </figure>
+                    <div id="2" class="info-producto"><h2>Casa Dragones Tequila</h2>
+                        <p class="price">$330</p> 
+                        <p class="cantidad"></p> 
+                        <button>Añadir al carrito</button>
+                        <button>Borrar</button>
+                     </div>
+                </div>
+             </div>
+          </div>
+          <br>
+        <div class="container-items">
+          <div class="item"> 
+            <figure>
+              <img src="Don Julio.jpg" alt="producto">
+                  </figure>
+                    <div id="3" class="info-producto"><h2>Don Julio Tequila</h2>
+                      <p class="price">$240</p>
+                        <p class="cantidad"></p> 
+                        <button>Añadir al carrito</button>
+                        <button>Borrar</button>
+ </div>
+        <br>
+        <div class="container-items">
+          <div class="item"> 
+            <figure>
+              <img src="patron tequila.avif" alt="producto">
+                  </figure>
+                    <div id="4" class="info-producto"><h2>Patron Tequila</h2>
+                        <p class="price">$220</p>
+                        <p class="cantidad"></p> 
+                        <button>Añadir al carrito</button>
+                        <button>Borrar</button>
+          </div>
+        <div class="container-items">
+          <div class="item"> 
+            <figure>
+              <img src="jose cuervo.webp" alt="producto">
+                  </figure>
+                    <div id="4" class="info-producto"><h2>José Cuervo Tequila</h2>
+                        <p class="price">$150</p>
+                        <p class="cantidad"></p> 
+                        <button>Añadir al carrito</button>
+                        <button>Borrar</button>
+        </div>
 
-        <div class="result my-4" id="resultado"></div>
-     </script>
-    <br>
+          
+                                              
+
+
+           
+
+
+      <br>
       <footer>
-        <p><small>©2024/Team-Ascentic/Derechos reservados</small></p>
+      <p><small>©2024/Team-Ascentic/Derechos reservados</small></p>
       </footer>
       <script src="./javascript/index.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
