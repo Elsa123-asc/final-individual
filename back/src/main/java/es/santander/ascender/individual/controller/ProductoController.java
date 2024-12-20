@@ -20,8 +20,6 @@ import es.santander.ascender.individual.model.Producto;
 import jakarta.validation.Valid;
 
 @RestController
-@CrossOrigin(origins = 
-"http://localhost:1234")
 @RequestMapping(path = "/productos")
 public class ProductoController {
 

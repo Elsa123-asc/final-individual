@@ -2,13 +2,13 @@ $(function) {
     console.log('id');
     $("#listar").on("click", function() {
         $.get("http://localhost:1234/api/productos", function(data) {
-            $("#resListar").attr("data-midato", data);
+            $("#resListar").attr("botton", data);
             console.log(data);
         })
 });
 $("#leer").on("click", function(button) {
     $.get("http://localhost:1234/api/productos/1", function(data) {
-        $("#resLeer").text("ok"); 
+        $("#resLeer").text("agregar"); 
         console.log(data);
     })
     
@@ -17,8 +17,8 @@ $("#leer").on("click", function(button) {
 $('.add-to-cart').on('click',function() {
     //console.log('hola');
     $.ajax({
-        url: "http://localhost:1234/api/productos",
-        method: "POST",
+        url: "http://localhost:1234/api/productos/1",
+        method: "DELETE",
         "data": JSON.stringify({
             "id": 1,
             "nombre": "Clase Azul Tequila",
@@ -34,7 +34,7 @@ $('.add-to-cart').on('click',function() {
             console.log(data);
         }
     });
-});
+    });
 
 
 
@@ -43,5 +43,7 @@ const btnCart = document.querySelector('.container-icon')
 const containerCartProducts = document.querySelector('.container-cart-products')
 
 btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-});
+    containerCartProducts.classList.toggle('carrito')
+    })
+}
+
