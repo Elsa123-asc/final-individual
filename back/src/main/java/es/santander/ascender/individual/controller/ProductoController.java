@@ -23,9 +23,6 @@ import jakarta.validation.Valid;
 @RequestMapping(path = "/productos")
 public class ProductoController {
 
-    public ProductoController() {
-    }
-
     private Map<Long, Producto> productos = new HashMap<>();
 
     public ProductoController() {
