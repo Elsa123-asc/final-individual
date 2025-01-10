@@ -1,6 +1,9 @@
 package ces.santander.ascender;
 
 import org.junit.jupiter.api.Test;
+
+import es.santander.ascender.GestionCompras;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GestionComprasTest {
