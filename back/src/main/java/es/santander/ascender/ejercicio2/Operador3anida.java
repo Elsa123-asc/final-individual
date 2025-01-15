@@ -32,7 +32,6 @@ public static void main(String[] args) {
                             
                         }
 
-
                             // || el operador OR son dos patas para la condicion 1 o 2. Significa or. (o). 
                                 } 
         if(calificacion<0 || calificacion>10);{
